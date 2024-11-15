@@ -28,7 +28,7 @@ export default function ZaniCreditPage() {
           <div className="flex flex-col sm:flex-row items-center justify-between mb-4">
             <h1 className="text-3xl font-bold text-gray-900 flex items-center mb-4 sm:mb-0">
               <DollarSign className="h-8 w-8 mr-2 text-green-600" />
-              ZaniCredit
+              Zani Credit Solutions Ltd
             </h1>
             <div className="flex flex-wrap justify-center sm:justify-end items-center gap-4">
               <a href="tel:09739036030" className="flex items-center text-gray-600 hover:text-green-600">
@@ -83,7 +83,7 @@ export default function ZaniCreditPage() {
         </div>
 
         <div className="bg-white shadow-md rounded-lg p-6 max-w-md mx-auto">
-          <h3 className="text-xl font-semibold mb-2">Loan Calculator</h3>
+          <h3 className="text-xl font-semibold mb-2 text-gray-900">Loan Calculator</h3>
           <p className="text-sm text-gray-600 mb-4">Calculate your loan repayment after one month</p>
           <form onSubmit={calculateLoan}>
             <div className="space-y-4">
@@ -122,7 +122,7 @@ export default function ZaniCreditPage() {
         <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center justify-center text-center">
             <p className="text-sm text-gray-500 mb-4">
-              © 2023 ZaniCredit. All rights reserved.
+              © 2024 Zani Credit Solutions Ltd. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center items-center gap-4 mb-4">
               <a href="tel:09739036030" className="text-sm text-gray-500 hover:text-green-600">
