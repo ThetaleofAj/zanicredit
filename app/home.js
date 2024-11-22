@@ -16,10 +16,12 @@ export default function ZaniCreditPage() {
       return
     }
     // Simple interest calculation (10% per month for this example)
-    const interest = amount * 0.10
+    const interest = amount * 0.30
     const total = amount + interest
     setRepaymentAmount(total)
   }
+  const date = new Date();
+  let year = date.getFullYear()
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-100">
@@ -27,7 +29,7 @@ export default function ZaniCreditPage() {
         <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row items-center justify-between mb-4">
             <h1 className="text-3xl font-bold text-gray-900 flex items-center mb-4 sm:mb-0">
-              <DollarSign className="h-8 w-8 mr-2 text-green-600" />
+            <img alt='logo' src='/ZANI.JPG' className='w-16 h-16'/>
               Zani Credit Solutions Ltd
             </h1>
             <div className="flex flex-wrap justify-center sm:justify-end items-center gap-4">
@@ -39,7 +41,7 @@ export default function ZaniCreditPage() {
                 <Mail className="h-5 w-5 mr-2" />
                 <span>zanicredit@gmail.com</span>
               </a>
-              <a href="https://www.facebook.com/ZaniCredit" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-600 hover:text-green-600">
+              <a href="https://www.facebook.com/share/Xbmt5fJyrkq9WoKj/" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-600 hover:text-green-600">
                 <Facebook className="h-5 w-5 mr-2" />
                 <span>Facebook</span>
               </a>
@@ -88,7 +90,7 @@ export default function ZaniCreditPage() {
           <form onSubmit={calculateLoan}>
             <div className="space-y-4">
               <div className="space-y-2">
-                <label htmlFor="loanAmount" className="block text-sm font-medium text-gray-700">
+                <label htmlFor="loanAmount" className="block text-sm font-medium text-gray-900">
                   Loan Amount (K)
                 </label>
                 <input
@@ -98,7 +100,7 @@ export default function ZaniCreditPage() {
                   value={loanAmount}
                   onChange={(e) => setLoanAmount(e.target.value)}
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-green-500 focus:border-green-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-green-500 focus:border-green-500 text-gray-900"
                 />
               </div>
               <button
@@ -111,7 +113,7 @@ export default function ZaniCreditPage() {
           </form>
           {repaymentAmount !== null && (
             <div className="mt-4 text-center">
-              <p className="text-lg font-semibold">Repayment Amount after 1 month:</p>
+              <p className="text-lg font-semibold text-gray-900">Repayment Amount after 1 month:</p>
               <p className="text-2xl font-bold text-green-600">K{repaymentAmount.toFixed(2)}</p>
             </div>
           )}
@@ -122,7 +124,7 @@ export default function ZaniCreditPage() {
         <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center justify-center text-center">
             <p className="text-sm text-gray-500 mb-4">
-              © 2024 Zani Credit Solutions Ltd. All rights reserved.
+              © {year} Zani Credit Solutions Ltd. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center items-center gap-4 mb-4">
               <a href="tel:09739036030" className="text-sm text-gray-500 hover:text-green-600">
@@ -133,7 +135,7 @@ export default function ZaniCreditPage() {
                 <Mail className="h-4 w-4 inline mr-1" />
                 zanicredit@gmail.com
               </a>
-              <a href="https://www.facebook.com/ZaniCredit" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-500 hover:text-green-600">
+              <a href="https://www.facebook.com/share/Xbmt5fJyrkq9WoKj/" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-500 hover:text-green-600">
                 <Facebook className="h-4 w-4 inline mr-1" />
                 Facebook
               </a>
@@ -141,6 +143,11 @@ export default function ZaniCreditPage() {
             <p className="text-sm text-gray-500 flex items-center justify-center mb-4">
               <MapPin className="h-4 w-4 inline mr-1" />
               EW Tarrys Building, Cairo Road, Lusaka
+            </p>
+
+            <p className="text-sm text-gray-500 flex items-center justify-center mb-4">
+              <MapPin className="h-4 w-4 inline mr-1" />
+              Shop number 38B, Arcades Shopping Mall, Lusaka
             </p>
             <div className="text-xs text-gray-400">
               <Link href="/terms" className="hover:underline">Terms of Service</Link>
