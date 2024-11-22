@@ -16,7 +16,7 @@ export default function ZaniCreditPage() {
       return
     }
     // Simple interest calculation (10% per month for this example)
-    const interest = amount * 0.30
+    const interest = amount * 0.40
     const total = amount + interest
     setRepaymentAmount(total)
   }
