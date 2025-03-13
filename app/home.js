@@ -324,7 +324,7 @@ export default function ZaniCreditPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gray-900">Calculate Your Loan</h2>
-              <p className="mt-4 text-xl text-gray-600">See how much you'll pay back after one month</p>
+              <p className="mt-4 text-xl text-gray-600">See how much you&apos;ll pay back after one month</p>
             </div>
 
             <div className="max-w-md mx-auto">
