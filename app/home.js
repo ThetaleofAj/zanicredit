@@ -55,7 +55,7 @@ export default function ZaniCreditPage() {
           <div className="flex flex-col sm:flex-row items-center justify-between">
             <div className="flex items-center mb-4 sm:mb-0">
               <h1 className="text-3xl font-bold bg-clip-text flex flex-row items-center justify-center text-transparent bg-gradient-to-r from-green-600 to-emerald-500">
-              <img alt='logo' src='/ZANI.JPG' className='w-16 h-16'/>
+              <img alt='logo' src='/zani.jpg' className='w-16 h-16'/>
               Zani Credit Solutions Ltd
               </h1>
             </div>
@@ -425,7 +425,7 @@ export default function ZaniCreditPage() {
             <div>
               <div className="flex items-center mb-4">
                 <div className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center mr-3">
-                <img alt='logo' src='/ZANI.JPG' className='w-16 h-10'/>
+                <img alt='logo' src='/zani.jpg' className='w-16 h-10'/>
                 </div>
                 <h3 className="text-xl font-bold text-white">Zani Credit Solutions Ltd</h3>
               </div>
